@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P2P Call</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="main-screen">
+  <input id="peer-id" type="text" placeholder="Введите ID собеседника">
+  <div id="call-button">
+    <div class="glow-circle">📞</div>
+  </div>
+</div>
+
+<div id="call-screen" class="hidden">
+  <video id="remote-video" autoplay></video>
+  <div id="mini-local">
+    <video id="local-video" autoplay muted></video>
+  </div>
+  <div id="controls">
+    <button id="toggle-mic">🎤</button>
+    <button id="toggle-camera">📷</button>
+    <button id="switch-camera">🔄</button>
+    <button id="share-screen">🖥️</button>
+    <button id="end-call" class="end-call">❌</button>
+  </div>
+</div>
+
+<audio id="ringtone" src="ringtone.mp3"></audio>
+<audio id="connect-sound" src="connect.mp3"></audio>
+<audio id="end-sound" src="end.mp3"></audio>
+
+<script src="app.js"></script>
+</body>
+</html>
